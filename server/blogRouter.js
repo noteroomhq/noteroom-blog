@@ -1,14 +1,16 @@
-import { Router } from "express"
-const router = Router()
+const express = require("express");
+const router = express.Router();
 
-export default function blogRouter() {
+function blogRouter() {
     router.get("/", (req, res) => {
-        res.render("blogs/all")
-    })
+        res.render("blogs/all");
+    });
 
     router.get("/why-use-noteroom", (req, res) => {
-        res.render("blogs/why-use-noteroom")
-    })
+        res.render("blogs/why-use-noteroom");
+    });
 
-    return router
+    return router;
 }
+
+module.exports = blogRouter;
