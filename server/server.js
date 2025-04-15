@@ -17,6 +17,10 @@ app.get("/about-us", (req, res) => {
     res.render("about-us");
 });
 
+app.get("/join-us", (req, res) => {
+    res.render("join-us");
+});
+
 app.get("/support", (req, res) => {
     res.render("support");
 });
