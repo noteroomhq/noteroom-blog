@@ -10,6 +10,10 @@ function blogRouter() {
         res.render("blogs/why-use-noteroom");
     });
 
+    router.get("/the-productivity-code-by-anirban-biswas", (req, res) => {
+        res.render("the-productivity-code-by-anirban-biswas");
+    });
+
     return router;
 }
 
