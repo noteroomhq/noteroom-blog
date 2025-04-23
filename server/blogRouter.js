@@ -14,6 +14,10 @@ function blogRouter() {
         res.render("the-productivity-code-by-anirban-biswas");
     });
 
+    router.get("/hsc-college-admission-guide", (req, res) => {
+        res.render("blogs/hsc-college-admission-guide");
+    });
+
     return router;
 }
 
