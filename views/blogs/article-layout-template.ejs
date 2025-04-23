@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Write the Title Here</title>
+    <meta name="description" content="Write Meta Description here" />
+    <meta name="keywords" content="SEO Keywords here" />
+    <meta name="author" content="NoteRoom" />
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Title">
+    <meta property="og:description" content="Description" />
+    <meta property="og:image" content="URL_TO_IMAGE" /> <!-- Replace with an image URL -->
+    <meta property="og:url" content="https://yourwebsite.com/hsc-admission-guide">
+    <meta property="og:site_name" content="NoteRoom">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Title">
+    <meta name="twitter:description" content="Description">
+    <meta name="twitter:image" content="URL_TO_IMAGE" /> <!-- Replace with an image URL -->
+    <meta name="twitter:creator" content="Handle">
+    
+    <!-- Others -->
+    <%- include('../partials/links.ejs') %>
+    <%- include('../partials/header-footer-links.ejs') %>
+    <link rel="stylesheet" href="/css/blog-template.css">
+    
+</head>
+<body>
+
+  <%- include('../partials/header.ejs') %>
+    
+  <div class="article-layout">
+    <aside class="article-layout__sidebar">
+      <div class="article-toc">
+        <!-- Table of Contents placeholder -->
+        <h2 class="article-toc__title">Table of Contents</h2>
+        <ul class="article-toc__list">
+          <li><a href="#section1" class="article-toc__link">Section 1</a></li>
+          <li><a href="#section2" class="article-toc__link">Section 2</a></li>
+        </ul>
+      </div>
+    </aside>
+  
+    <main class="article-layout__content">
+      <article class="article">
+        <!-- Actual article content goes here -->
+        <h1 class="article-title">Article Title</h1>
+        <p class="article-paragraph">Lorem ipsum dolor sit amet...</p>
+        <!-- etc. -->
+      </article>
+    </main>
+  </div>
+  
+
+  <%- include('../partials/footer.ejs') %>
+
+  
+</body>
+</html>
