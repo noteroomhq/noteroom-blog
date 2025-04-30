@@ -36,63 +36,75 @@
 <body>
 
   <%- include('../partials/header.ejs') %>
-    
-  <div class="article-layout">
-    <!-- 📑 Sidebar TOC -->
-    <aside class="article-layout__sidebar">
-      <div class="article-toc">
-        <h2 class="article-toc__title">Table of Contents</h2>
-        <ul class="article-toc__list">
-          <li><a href="#step1" class="article-toc__link">Step 1: What You’re Applying For</a></li>
-          <li><a href="#step2" class="article-toc__link">Step 2: Which Colleges to Aim For</a></li>
-          <li><a href="#step3" class="article-toc__link">Step 3: Make a Study Plan</a></li>
-          <li><a href="#step4" class="article-toc__link">Step 4: Online Form Tips</a></li>
-          <li><a href="#step5" class="article-toc__link">Step 5: Mini Admission Tests</a></li>
-          <li><a href="#step6" class="article-toc__link">Step 6: Plan for Fees</a></li>
-          <li><a href="#step7" class="article-toc__link">Step 7: Ask for Help</a></li>
-          <li><a href="#bonus" class="article-toc__link">Bonus: Your Fresh Start</a></li>
-        </ul>
+
+  <article class="article-container">
+    <!-- Top Section -->
+    <header class="article-header">
+      <div class="article-breadcrumb">
+        <nav>
+          <a href="/blog" class="breadcrumb-main" >Blog <span>/</span> </a>
+          <a href="/blog/hsc-admission" class="breadcrumb-sub" >HSC Admission</a>
+        </nav>
       </div>
-    </aside>
   
-    <!-- 📄 Main Content -->
-    <main class="article-layout__content">
-      <article class="article">
-                  <!-- Breadcrumb -->
-          <div class="article-breadcrumb">
-            <nav>
-              <a href="/blog">Blog</a>
-              <span>/</span>
-              <a href="/blog/hsc-admission">HSC Admission</a>
-            </nav>
-          </div>
-
-          <!-- Title & Meta Section -->
-          <div class="article-header">
-            <h1 class="article-title">
-              How to Prepare for HSC Admission in Bangladesh (Without Losing Your Mind)
-            </h1>
-
-            <div class="article-meta">
-              <img src="\images\NoteRoom Caricature Cartoonic  - Anirban.jpg.png" alt="Anirban" class="author-image" />
-              <div class="author-info">
-                <p class="article-para-text"><span class="author-name">Anirban Biswas</span></p>
-                <p class="publish-date">Published on April 23, 2025<span class="reading-time"> • 5 min read</span></p>
-              </div>
-            </div>
-          </div>
-
-        <p class="article-para-text">Let’s be real. HSC admission season in Bangladesh feels like a mix of panic, pressure, and your aunt asking “Which college e porbi?” for the tenth time. It’s confusing, weirdly intense, and unless you’ve got a cousin who just went through it, no one seems to explain it properly.</p>
-        <p class="article-para-text">So here’s a clear, honest, and straight-to-the-point guide that helps. Whether you’re aiming for Rajuk, Viqarunnisa, or Dhaka College, or just want to get into a solid college and start fresh, this is for you.</p>
+      <h1 class="article-title">
+        How to Prepare for HSC Admission in Bangladesh (Without Losing Your Mind)
+      </h1>
   
-        <h2 id="step1">Step 1: Know What You’re Applying For</h2>
-        <p class="article-para-text">Before anything else, figure out what you need to get in. Most colleges (especially top ones) want:</p>
+      <div class="article-meta">
+        <img src="\images\NoteRoom Caricature Cartoonic  - Anirban.jpg.png" alt="Author" class="author-image" />
+        <div class="author-info">
+          <p class="author-name"> Anirban Biswas</p>
+          <p class="publish-date">May 5, 2025 • <span class="reading-time">5 min read</span></p>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Cover Image -->
+    <div class="article-cover">
+      <img src="\images\hsc-admission-guide-cover-photo.jpg" alt="HSC Admission Guide" />
+    </div>
+  
+    <!-- Content Body -->
+    <div class="article-body">
+      <!-- TOC Sidebar -->
+      <aside class="article-toc">
+        <nav>
+          <ul>
+            <li><a href="#step1">Step 1: Know What You're Applying For</a></li>
+            <li><a href="#step2">Step 2: Decide Which Colleges to Aim For</a></li>
+            <li><a href="#step3">Step 3: Make a Study Plan</a></li>
+            <li><a href="#step4">Step 4: Online Form?</a></li>
+            <li><a href="#step5">Step 5: Admission Tests</a></li>
+            <li><a href="#step6">Step 6: Plan for Fees</a></li>
+            <li><a href="#step7">Step 7: Ask for Help</a></li>
+          </ul>
+        </nav>
+      </aside>
+  
+      <!-- Main Article Content -->
+      <section class="article-content">
+
+        <div class="article-para">
+          <p class="article-para-text"> <span class="article-para-word-cap">L</span>et’s be real. HSC admission season in Bangladesh feels like a mix of panic, pressure, and your aunt asking “Kon college e porbi?” for the tenth time. It’s confusing, weirdly intense, and unless you’ve got a cousin who just went through it, no one seems to explain it properly.</p>
+        </div>
+      
+        <div class="article-para">
+          <p class="article-para-text">So here’s a clear, honest, and straight-to-the-point guide that helps. Whether you’re aiming for Rajuk, Viqarunnisa, or Dhaka College, or just want to get into a solid college and start fresh, this is for you.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="step1">Step 1: Know What You’re Applying For</h2>
+        <div class="article-para">
+          <p class="article-para-text">Before anything else, figure out what you need to get in. Most colleges (especially top ones) want:</p>
+        </div>
         <ul>
           <li>GPA 5.00 if you’re applying to science</li>
           <li>A decent GPA (4.5+ usually safe) for commerce or humanities</li>
           <li>Some ask for subject-specific grades especially in math or science</li>
         </ul>
-        <p class="article-para-text">You’ll need:</p>
+        <div class="article-para">
+          <p class="article-para-text">You’ll need:</p>
+        </div>
         <ul>
           <li>SSC transcript and certificate</li>
           <li>Birth certificate</li>
@@ -100,79 +112,124 @@
           <li>Mobile number used during SSC registration</li>
           <li>Guardian’s NID (sometimes asked during verification)</li>
         </ul>
-        <p class="article-para-text"><strong>Pro tip:</strong> Scan everything. Keep it in your phone and Google Drive. Losing the original the night before the deadline = pain.</p>
-  
-        <h2 id="step2">Step 2: Decide Which Colleges to Aim For</h2>
-        <p class="article-para-text">There are two types of colleges when it comes to admission:</p>
+        <div class="article-para">
+          <p class="article-para-text"><strong>Pro tip:</strong> Scan everything. Keep it in your phone and Google Drive. Losing the original the night before the deadline = pain.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="step2">Step 2: Decide Which Colleges to Aim For</h2>
+        <div class="article-para">
+          <p class="article-para-text">There are two types of colleges when it comes to admission:</p>
+        </div>
         <ul>
           <li>Merit-based colleges via the government portal — like Rajuk, Viqarunnisa, Dhaka College, Holy Cross, Ideal, etc.</li>
           <li>Institutions like Notre Dame & Holy Cross — they run separate admission processes with their own forms & tests.</li>
         </ul>
-        <p class="article-para-text">So don’t put Notre Dame in your government preference list — it won’t work. If you’re applying to these colleges, check their websites or Facebook pages directly.</p>
-        <p class="article-para-text">For the government portal, you’ll list up to 10 choices — rank them smartly:</p>
+        <div class="article-para">
+          <p class="article-para-text">So don’t put Notre Dame in your government preference list — it won’t work. If you’re applying to these colleges, check their websites or Facebook pages directly.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">For the government portal, you’ll list up to 10 choices — rank them smartly:</p>
+        </div>
         <ul>
           <li>2–3 dream colleges</li>
           <li>4–5 mid-tier options</li>
           <li>2–3 backups (realistic safety net)</li>
         </ul>
-  
-        <h2 id="step3">Step 3: Make a Study Plan</h2>
-        <p class="article-para-text">Look, you don’t need a bullet journal or 4-color highlighters. Just write down:</p>
+      
+        <h2 class="article-heading--h2" id="step3">Step 3: Make a Study Plan</h2>
+        <div class="article-para">
+          <p class="article-para-text">Look, you don’t need a bullet journal or 4-color highlighters. Just write down:</p>
+        </div>
         <ul>
           <li>What subjects you're struggling with</li>
           <li>Topics you want to revise before college starts</li>
           <li>Entrance prep (if you're applying to Notre Dame, Holy Cross, etc.)</li>
         </ul>
-        <p class="article-para-text">If you’re still in “post-SSC chill mode,” that’s fine. But HSC isn’t slow-paced. Having a headstart makes life easier later.</p>
-  
-        <h2 id="step4">Step 4: Online Form? Here’s What Actually Matters</h2>
-        <p class="article-para-text">If you’re going through <code>xiclassadmission.gov.bd</code>, here’s how it works:</p>
+        <div class="article-para">
+          <p class="article-para-text">If you’re still in “post-SSC chill mode,” that’s fine. But HSC isn’t slow-paced. Having a headstart makes life easier later.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="step4">Step 4: Online Form? Here’s What Actually Matters</h2>
+        <div class="article-para">
+          <p class="article-para-text">If you’re going through <code>xiclassadmission.gov.bd</code>, here’s how it works:</p>
+        </div>
         <ul>
           <li>Choose up to 10 colleges</li>
           <li>Rank them carefully</li>
           <li>Submit with a small fee via bKash/Nagad</li>
           <li>Wait for your result (they’ll notify you via SMS)</li>
         </ul>
-        <p class="article-para-text">Things to keep in mind:</p>
+        <div class="article-para">
+          <p class="article-para-text">Things to keep in mind:</p>
+        </div>
         <ul>
           <li>Choose shift wisely (morning/evening) — some colleges have separate merit lists</li>
           <li>Save your transaction ID</li>
           <li>Don’t panic if you don’t get your top choice — there are multiple phases for migration and re-application</li>
         </ul>
-        <p class="article-para-text">🎯 <strong>Again:</strong> Notre Dame, Holy Cross, etc. do not use this process. You need to collect and submit their form separately.</p>
-  
-        <h2 id="step5">Step 5: Prep for Mini Admission Tests (If Needed)</h2>
-        <p class="article-para-text">Colleges like Notre Dame, Holy Cross, and a few others might ask for small written tests, usually based on SSC-level English and general knowledge.</p>
-        <p class="article-para-text">So brush up on:</p>
+        <div class="article-para">
+          <p class="article-para-text">🎯 <strong>Again:</strong> Notre Dame, Holy Cross, etc. do not use this process. You need to collect and submit their form separately.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="step5">Step 5: Prep for Mini Admission Tests (If Needed)</h2>
+        <div class="article-para">
+          <p class="article-para-text">Colleges like Notre Dame, Holy Cross, and a few others might ask for small written tests, usually based on SSC-level English and general knowledge.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">So brush up on:</p>
+        </div>
         <ul>
           <li>Basic English grammar and comprehension</li>
           <li>Current events and GK</li>
           <li>Short essay or paragraph writing</li>
         </ul>
-        <p class="article-para-text">If you’ve taken board exams, you’re more than ready. You just need to dust off the brain cells and review a little.</p>
-  
-        <h2 id="step6">Step 6: Plan for Fees (Yeah, It Adds Up Fast)</h2>
-        <p class="article-para-text">HSC admission isn’t super expensive, but the little things add up:</p>
+        <div class="article-para">
+          <p class="article-para-text">If you’ve taken board exams, you’re more than ready. You just need to dust off the brain cells and review a little.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="step6">Step 6: Plan for Fees (Yeah, It Adds Up Fast)</h2>
+        <div class="article-para">
+          <p class="article-para-text">HSC admission isn’t super expensive, but the little things add up:</p>
+        </div>
         <ul>
           <li>Online form fee (around ৳150–200)</li>
           <li>College admission fees (can be ৳2,000–৳12,000 depending on institution)</li>
           <li>Uniforms, books, ID photos, coaching fees if you plan to join any</li>
         </ul>
-        <p class="article-para-text">Start tracking early so nothing catches you off guard.</p>
+        <div class="article-para">
+          <p class="article-para-text">Start tracking early so nothing catches you off guard.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="step7">Step 7: Ask for Help</h2>
+        <div class="article-para">
+          <p class="article-para-text">If this whole process is making you overthink everything, talk to someone. Ask a friend, older cousin, or a teacher. Even the local photocopy guy near the college usually knows what’s up.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">This isn’t about being the smartest in the room — it’s about getting through the process without messing up something small.</p>
+        </div>
+      
+        <h2 class="article-heading--h2" id="bonus">Bonus: This Is Your Fresh Start (Rebrand Time)</h2>
+        <div class="article-para">
+          <p class="article-para-text">HSC life gives you a rare chance to change how you show up. If you want to switch from the “I barely passed SSC” kid to the “I’m actually trying now” version of yourself — this is it.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">New college, new habits, maybe even a new group of friends.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">So start fresh. Get organized. Write that first list. You don’t need to have everything figured out, but knowing where you’re headed makes a big difference.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">If this helped, keep an eye out as we’ll be dropping more guides to help with HSC life, university prep, and figuring out what comes next.</p>
+        </div>
+        <div class="article-para">
+          <p class="article-para-text">And yeah, if your relatives ask again “kothay apply korcho?” — now you’ve got answers.</p>
+        </div>
+      
+      </section>
+      
+    </div>
+  </article>
   
-        <h2 id="step7">Step 7: Ask for Help</h2>
-        <p class="article-para-text">If this whole process is making you overthink everything, talk to someone. Ask a friend, older cousin, or a teacher. Even the local photocopy guy near the college usually knows what’s up.</p>
-        <p class="article-para-text">This isn’t about being the smartest in the room — it’s about getting through the process without messing up something small.</p>
-  
-        <h2 id="bonus">Bonus: This Is Your Fresh Start (Rebrand Time)</h2>
-        <p class="article-para-text">HSC life gives you a rare chance to change how you show up. If you want to switch from the “I barely passed SSC” kid to the “I’m actually trying now” version of yourself — this is it.</p>
-        <p class="article-para-text">New college, new habits, maybe even a new group of friends.</p>
-        <p class="article-para-text">So start fresh. Get organized. Write that first list. You don’t need to have everything figured out, but knowing where you’re headed makes a big difference.</p>
-        <p class="article-para-text">If this helped, keep an eye out as we’ll be dropping more guides to help with HSC life, university prep, and figuring out what comes next.</p>
-        <p class="article-para-text">And yeah, if your relatives ask again “kothay apply korcho?” — now you’ve got answers.</p>
-      </article>
-    </main>
-  </div>
   
   
 

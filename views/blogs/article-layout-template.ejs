@@ -37,27 +37,58 @@
 
   <%- include('../partials/header.ejs') %>
     
-  <div class="article-layout">
-    <aside class="article-layout__sidebar">
-      <div class="article-toc">
-        <!-- Table of Contents placeholder -->
-        <h2 class="article-toc__title">Table of Contents</h2>
-        <ul class="article-toc__list">
-          <li><a href="#section1" class="article-toc__link">Section 1</a></li>
-          <li><a href="#section2" class="article-toc__link">Section 2</a></li>
-        </ul>
+  <article class="article-container">
+    <!-- Top Section -->
+    <header class="article-header">
+      <div class="article-breadcrumb">
+        <nav>
+          <a href="/blog">Blog</a> <span>/</span>
+          <a href="/blog/hsc-admission">HSC Admission</a>
+        </nav>
       </div>
-    </aside>
   
-    <main class="article-layout__content">
-      <article class="article">
-        <!-- Actual article content goes here -->
-        <h1 class="article-title">Article Title</h1>
-        <p class="article-paragraph">Lorem ipsum dolor sit amet...</p>
-        <!-- etc. -->
-      </article>
-    </main>
-  </div>
+      <h1 class="article-title">
+        How to Prepare for HSC Admission in Bangladesh (Without Losing Your Mind)
+      </h1>
+  
+      <div class="article-meta">
+        <img src="/authors/noteroom-team.jpg" alt="Author" class="author-image" />
+        <div class="author-info">
+          <p>Written by <span class="author-name">NoteRoom Team</span></p>
+          <p class="publish-date">Published on April 23, 2025 • <span class="reading-time">5 min read</span></p>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Cover Image -->
+    <div class="article-cover">
+      <img src="/images/hsc-admission-guide.jpg" alt="HSC Admission Guide" />
+    </div>
+  
+    <!-- Content Body -->
+    <div class="article-body">
+      <!-- TOC Sidebar -->
+      <aside class="article-toc">
+        <nav>
+          <ul>
+            <li><a href="#step1">Step 1: Know What You're Applying For</a></li>
+            <li><a href="#step2">Step 2: Decide Which Colleges to Aim For</a></li>
+            <li><a href="#step3">Step 3: Make a Study Plan</a></li>
+            <li><a href="#step4">Step 4: Online Form?</a></li>
+            <li><a href="#step5">Step 5: Admission Tests</a></li>
+            <li><a href="#step6">Step 6: Plan for Fees</a></li>
+            <li><a href="#step7">Step 7: Ask for Help</a></li>
+          </ul>
+        </nav>
+      </aside>
+  
+      <!-- Main Article Content -->
+      <section class="article-content">
+        <!-- Your article content goes here -->
+      </section>
+    </div>
+  </article>
+  
   
 
   <%- include('../partials/footer.ejs') %>
