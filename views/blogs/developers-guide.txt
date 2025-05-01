@@ -1,0 +1,152 @@
+|| BLOG TEMPLATE DEVELOPER GUIDE ||
+
+This guide helps you write and structure blog posts using the blog template.
+Follow the class naming and layout to keep things consistent.
+
+| START HERE |
+
+Go to: views/blog/article-template.ejs
+
+Duplicate the file
+
+Rename it based on your blog topic (example: hsc-admission-guide.ejs)
+
+Update all meta tags at the top
+
+Title, description, keywords
+
+Open Graph and Twitter tags
+
+Comments in the file will guide you
+
+PAGE STRUCTURE
+The blog layout has three main sections:
+
+HEADER
+
+article-header: Wraps the title, breadcrumbs, and meta info
+
+article-breadcrumb: Navigation links
+
+breadcrumb-main: Main section like "Blog"
+
+breadcrumb-sub: Topic or category
+
+article-title: Main heading
+
+article-meta: Author name, image, date, reading time
+
+author-image: 32x32 image
+
+author-name: Writer’s name
+
+publish-date: Date and reading time
+
+COVER
+
+article-cover: Full-width blog image
+
+Use a clear, engaging image
+
+BODY
+
+article-body: Holds both content and sidebar
+
+article-toc: Table of contents (shown as a sidebar on desktop)
+
+article-content: Main writing section
+
+WRITING YOUR CONTENT
+Use the following classes while adding content:
+
+PARAGRAPH
+Use this format:
+
+article-para
+
+article-para-text
+
+HEADING
+Use IDs so TOC links work:
+
+article-heading--h2
+
+article-heading--h3
+
+article-heading--h4
+
+LIST
+Use these for bullet points or steps:
+
+article-list
+
+article-list--unordered
+
+article-list--ordered
+
+QUOTE
+Use article-quote for styled quotes or notes.
+
+DROPCAP
+Use article-para-word-cap to highlight the first word of a paragraph.
+
+IMAGES
+Simple image:
+
+article-image
+
+With caption:
+
+article-image--captioned
+
+article-image--caption
+
+CODE
+Block code:
+
+article-code
+Inline code:
+
+article-inline-code
+
+LINKS
+Use article-link for any inline hyperlink.
+
+TABLES
+Use article-table for data:
+
+Rows use basic table tags
+Header uses <th>, others use <td>
+This is already styled in CSS
+
+EMBEDDING VIDEO
+To embed a video, use the following layout:
+
+article-video-wrapper
+
+article-video
+Paste the YouTube embed link inside an iframe
+
+RESPONSIVENESS
+This template works on mobile by default.
+On smaller screens:
+
+TOC moves below the article
+
+Fonts scale down
+
+Images and videos resize automatically
+
+CHECKLIST BEFORE PUBLISHING
+Template duplicated
+
+Meta tags updated
+
+Correct classes used
+
+ID values added to each section for TOC
+
+Mobile layout checked
+
+| SUPPORT |
+If anything is unclear or if you need a new layout component, talk to the dev lead or check with the design team.
