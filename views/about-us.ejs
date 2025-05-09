@@ -6,46 +6,13 @@
     <title>About NoteRoom</title>
     <link rel="stylesheet" href="/css/about-us.css" />
     <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <%- include('partials/links.ejs') %>
+    <%- include('./partials/links.ejs') %>
+    <%- include('./partials/header-footer-links.ejs') %>
+
 </head>
 <body>
-   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img class="logo-img" src="https://noteroom.co/assets/apple-touch-icon.png" alt="NoteRoom Logo" />
-      <span class="brand-name">noteroom</span>
-    </div>
+  <%- include('./partials/header.ejs') %>
 
-    <div class="nav-links">
-      <a href="/">Product</a>
-      <a href="/">Solution</a>
-      <a href="/">Resources</a>
-      <a href="/">Open Source</a>
-    </div>
-
-    <div class="buttons">
-      <a href="https://app.noteroom.co/signup" class="btn btn-primary">Try Now</a>
-<a href="https://app.noteroom.co/login" class="btn btn-secondary" style="margin-top: 5px;">Login</a>
-    </div>
-
-    <div class="menu-toggle" id="menu-Toggle">&#9776;</div>
-    <div class="menu" id="menu">
-      <ul>
-        <li><a href="/">Product</a></li>
-        <li><a href="/">Solution</a></li>
-        <li><a href="/">Resources</a></li>
-        <li><a href="/">Open Source</a></li>
-        <li>
-          <a href="https://app.noteroom.co/signup" class="btn btn-primary">Try Now</a>
-        </li>
-        <li>
-          <a href="https://app.noteroom.co/login" class="btn btn-secondary" style="margin-top: 5px;">Login</a>
-        </li>
-      </ul>
-    </div>
-    
-  </nav>
 
   <!-- Hero Section -->
   <section class="founders-section">
@@ -192,6 +159,7 @@
         frameborder="0"
         allowfullscreen>
       </iframe>
+      <iframe src="https://www.youtube.com/embed/JbesmfdUMkw?si=QGmaXIeDvz8oL3sH"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="video-container">
@@ -218,6 +186,8 @@
       </div>
     </div>
   </div>
+
+  <%- include('./partials/footer.ejs') %>
 
 <script type="module" src="/js/about-us.js"></script>
 <script src="/js/utils.js"></script>
