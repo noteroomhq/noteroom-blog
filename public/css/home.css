@@ -194,9 +194,10 @@
   
   /* || Overlay Effects */
   .hero-section--overlay {
+    height: 90vh;
+    width: 98%;
     visibility: hidden;
     position: absolute;
-    /* top: 70px; */
     background-color: var(--squid-ink);
   
     clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
@@ -295,7 +296,48 @@
       font-weight: 500;
     }
   }
-  
+    @media (max-width: 1625px) {
+  .hero__corner img {
+    width: 350px;
+  }
+  .hero-logo,
+  .hero-logo--top-layer {
+    width: 70px;
+  }
+  .hero-title,
+  .hero-title--top-layer {
+    font-size: 4.5rem;
+  }
+  .hero-desc,
+  .hero-desc--top-layer {
+    width: 50%;
+    max-width: 500px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-height: 850px) {
+  .hero__corner img {
+    width: 250px;
+  }
+  .hero-logo,
+  .hero-logo--top-layer {
+    width: 60px;
+  }
+  .hero-title,
+  .hero-title--top-layer {
+    font-size: 3.8rem;
+  }
+  .hero-desc,
+  .hero-desc--top-layer {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+    width: 60%;
+  }
+}
+
   @media (max-width: 360px) {
     .hero-section,
     .hero-section--overlay {
@@ -373,6 +415,8 @@
       margin: 0;
     }
   }
+
+
   
   /* || External Section (Down the Fold)  */
   
