@@ -13,10 +13,34 @@
   align-items: center;
 }
 
+  :root {
+    --squid-ink: #06192d;
+    --squid-ink-light: #12283d;
+  
+    --neon-blue: #04dbf6;
+    --neon-blue-light: #6cecf9;
+  
+    --light-gray: #f8f8f8;
+  
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+  
+    --border-thin: 1px solid var(--light-gray);
+    --border-thick: 2px solid var(--light-gray);
+  
+    --duration-fast: 0.1s;
+    --duration-med: 0.2s;
+    --duration-def: 0.3s;
+  }
+
 /* The primary header that has login and sign up button */
 
 *{
   box-sizing: border-box;
+}
+button{
+  cursor: pointer;
 }
 
 .header {
