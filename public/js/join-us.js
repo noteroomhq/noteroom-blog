@@ -1,4 +1,3 @@
-// ✅ Reusable Data Array
 const teamMembers = [
   {
     name: "John Doe",
