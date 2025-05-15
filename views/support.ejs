@@ -6,26 +6,20 @@
     <link rel="stylesheet" href="/css/support.css" />
     <link rel="stylesheet" href="/css/header-footer.css" />
     <title>Support & Feedback</title>
+    <meta name="description" content="Reach out to NoteRoom support team for any problems you're facing or any feedbacks you'd like to provide." />
+    <meta name="keywords" content="contact NoteRoom, NoteRoom support, NoteRoom help, issues with NoteRoom" />
 
     <%- include('partials/links.ejs') %>
+    <%- include('./partials/header-footer-links.ejs') %>
+
   </head>
   <body>
-    <header>
-      <svg
-        class="header-back-btn"
-        onclick="goPrevPage()"
-        width="25"
-        viewBox="0 0 68 68"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M16.6029 29.8333H67.332V38.1666H16.6029L39.9362 61.5L33.9987 67.3333L0.665367 34L33.9987 0.666649L39.9362 6.49998L16.6029 29.8333Z"
-          fill="#1D1B20"
-        />
-      </svg>
-      <h1>We'd love to hear from you!</h1>
-    </header>
+
+  <%- include('./partials/header.ejs') %>
+
+  <h1 class="support-title">How Can We Help Today?</h1>
+
+
     <iframe
       data-tally-src="https://tally.so/embed/mJJ88R?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
       loading="lazy"
@@ -36,6 +30,9 @@
       marginwidth="0"
       title="               NoteRoom Support🛠️ "
     ></iframe>
+
+  <%- include('./partials/footer.ejs') %>
+
     <script>
       var d = document,
         w = "https://tally.so/widgets/embed.js",
@@ -54,56 +51,6 @@
         (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
       }
     </script>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="clm">
-          <img
-            src="https://storage.googleapis.com/noteroom-fb1a7.appspot.com/badges/draft-logo-of-noteroom.png"
-            alt="NoteRoom Logo"
-          />
-          <div class="footer-about">
-            Noteroom is a student-driven platform for sharing notes,
-            collaborating, and group study. Think of it as a social media but
-            built for students.
-          </div>
-        </div>
-        <div class="clm">
-          <h3>Contact Info</h3>
-          <ul>
-            <li>College Road, Chakbazar, 4203 Chattogram</li>
-            <li>Phone: +8801978462090</li>
-            <li>Email: support@noteroom.co</li>
-          </ul>
-        </div>
-        <div class="clm">
-          <h3>Important Links</h3>
-          <ul>
-            <li><a href="http://app.noteroom.co/login">Login</a></li>
-            <!-- <li><a href="/user-guide">User Guide</a></li> -->
-            <li><a href="/about-us">About Us</a></li>
-          </ul>
-        </div>
-        <div class="clm">
-          <h3 class="sign-up-title">Not a Memeber Yet 😿?</h3>
-          <p>Jump in, share notes, and level up your study game with us!</p>
-          <div onclick="location.href='http://app.noteroom.co/login'" class="sign-up-btn">
-            Join Now
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="footer-copyright-wrapper">
-          <p class="footer-copyright-text">
-            <a class="privacy-policy-link" href="/privacy-policy"
-              >Privacy Policy</a
-            >
-            <a class="footer-copyright-link"
-              >Copyright ©2025 | NoteRoom | All rights reserved.
-            </a>
-          </p>
-        </div>
-      </div>
-    </footer>
 
     <script src="/js/support.js"></script>
     <script src="/js/utils.js"></script>
