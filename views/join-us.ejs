@@ -20,151 +20,36 @@
     <meta property="og:image:alt" content="NoteRoom hiring banner – Join the learning revolution">
 
     <%- include('partials/links.ejs') %>
-    <%- include('./partials/header-footer-links.ejs') %>  
+    <%- include('./partials/header-footer-links.ejs') %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
 </head>
 <body>
 
   <%- include('./partials/header.ejs') %>
   
-  <!-- Founders Section -->
-  <section class="founders-section">
-    <h2>Meet our beautiful team</h2>
-    <div class="development-info">
-      <h2>Meet the talented individuals shaping our journey</h2>
-    </div>
+<!-- Background Motion Shapes -->
+  <div class="background-shapes">
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <section class="hero">
+    <h1 id="hero-title">Meet the Beautiful,<br />NoteRoom's Team</h1>
+    <p id="hero-subtitle">Builders, dreamers, thinkers — each one shaping the future of learning in their own voice.</p>
   </section>
 
-  <!-- Video Section -->
-  <div class="video-frame">
-    <video controls>
-      <source src="your-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  <!-- Team Section -->
+  <section class="team-section">
+  <h2 class="team-heading">Meet the Team</h2>
+  <div class="team-grid">
+    <!-- Team Member Cards -->
+
   </div>
+</section>
 
-  <!-- Carousel Section -->
-  <div class="carousel-container">
-    <div class="carousel-track" id="carouselTrack"></div>
 
-    <div class="testimonial-nav">
-      <button id="prevBtn">&#8592;</button>
-      <button id="nextBtn">&#8594;</button>
-    </div>
-
-    <!-- Section Header -->
-    <section class="section-header">
-      <h2>Few words from our Team members</h2>
-      <p>Stories and experiences from the people behind our success.</p>
-    </section>
-
-    <!-- Testimonial Section -->
-    <div class="testimonial-container">
-      <div class="testimonial-image">
-        <img id="testimonialImg" src="" alt="Testimonial" />
-      </div>
-      <div class="testimonial-content">
-        <blockquote id="testimonialText">
-        </blockquote>
-        <cite id="testimonialName"></cite>
-        <div class="testimonial-nav">
-          <button id="prevBtn">&#8592;</button>
-          <button id="nextBtn">&#8594;</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Join Us Section -->
-  <div class="hr-section" id="join-noteroom-team">
-    <h2>Join us</h2>
-    <p class="hr-desc">
-      We’re always looking for passionate, creative, and driven individuals to
-      join our growing team. If you’re ready to work in a dynamic environment
-      where innovation, collaboration, and growth thrive, we’d love to hear
-      from you!
-    </p>
-    <a href="#" class="vacancie-btn">View Open Vacancies</a>
-
-    <h2 class="bene-title">
-      Perks of working at <span class="highlight">NoteRoom</span>
-    </h2>
-    <p>View couple of benefits of working at our company</p>
-
-    <div class="features">
-      <div class="feature-box">
-        <svg
-          width="22"
-          height="18"
-          viewBox="0 0 22 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M1 9L3.5 6.5L8.5 11.5L18.5 1.5L21 4L8.5 16.5L1 9Z"
-            fill="black"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <strong>Remote team</strong>
-      </div>
-
-      <div class="feature-box">
-        <svg
-          width="22"
-          height="18"
-          viewBox="0 0 22 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M1 9L3.5 6.5L8.5 11.5L18.5 1.5L21 4L8.5 16.5L1 9Z"
-            fill="black"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <strong>Skill Development</strong>
-      </div>
-
-      <div class="feature-box">
-        <svg
-          width="22"
-          height="18"
-          viewBox="0 0 22 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M1 9L3.5 6.5L8.5 11.5L18.5 1.5L21 4L8.5 16.5L1 9Z"
-            fill="black"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <strong>Growth Potential</strong>
-      </div>
-    </div>
-
-    <h2 class="j-title">Start Your Journey Here!</h2>
-    <p class="start-j-desc">
-      Read the company overview and reach out to us accordingly by clicking on
-      the button below
-    </p>
-    <a href="https://app.noteroom.co" class="vacancie-btn">Open Noteroom</a>
-  </div>
 
   <%- include('./partials/footer.ejs') %>
 
